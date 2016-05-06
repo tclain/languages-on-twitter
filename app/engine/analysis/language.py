@@ -9,7 +9,10 @@ class Language():
         return Language.guess_polyglot(input_text)
     @staticmethod
     def guess_polyglot(input_text):
-        analysed_text  = Text(input_text)
+        try :
+            analysed_text  = Text(input_text)
+        except Exception as e :
+            return "INCONNU"
         return analysed_text.language.name
 
 
