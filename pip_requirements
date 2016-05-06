@@ -1,0 +1,4 @@
+pubnub
+nltk
+flask
+flask-socketio
