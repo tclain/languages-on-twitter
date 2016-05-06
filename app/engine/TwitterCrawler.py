@@ -2,7 +2,7 @@
 import threading
 
 from stream.twitter import Stream
-from web.app.engine.analysis.twitter import TweetAnalyser
+from analysis.twitter import TweetAnalyser
 
 
 class TwitterCrawler(threading.Thread):
